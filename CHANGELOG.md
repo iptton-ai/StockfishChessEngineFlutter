@@ -1,3 +1,9 @@
+## 0.8.3
+
+- Added HarmonyOS Next platform support
+- Updated dynamic library loading to support HarmonyOS
+- Added HarmonyOS build configuration files
+
 ## 0.8.2
 
 - Fix dynamic library path for linux
