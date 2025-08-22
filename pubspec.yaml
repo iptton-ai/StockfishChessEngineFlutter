@@ -1,6 +1,6 @@
 name: stockfish_chess_engine
 description: "Use Stockfish chess engine directly in your Flutter project."
-version: 0.8.2
+version: 0.8.3
 homepage: https://github.com/loloof64/StockfishChessEngineFlutter
 
 environment:
@@ -47,6 +47,8 @@ flutter:
       macos:
         ffiPlugin: true
       windows:
+        ffiPlugin: true
+      harmonyos:
         ffiPlugin: true
 
   # To add assets to your plugin package, add an assets section, like this:

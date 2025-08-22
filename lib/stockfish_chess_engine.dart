@@ -29,6 +29,10 @@ final DynamicLibrary _dylib = () {
     return DynamicLibrary.open(
         'lib$_libName.so');
   }
+  // HarmonyOS Next support
+  if (Platform.operatingSystem == 'harmonyos' || Platform.operatingSystem == 'ohos') {
+    return DynamicLibrary.open('lib$_libName.so');
+  }
   throw UnsupportedError('Unknown platform: ${Platform.operatingSystem}');
 }();
 

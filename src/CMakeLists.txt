@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.10)
 
 project(stockfish_chess_engine VERSION 0.0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
-if(ANDROID)
+if(ANDROID OR HARMONYOS)
   set(IS_MOBILE_TARGET ON)
   add_definitions(-DIS_MOBILE_TARGET=1)
 endif()
@@ -36,8 +36,8 @@ endif()
 
 target_compile_definitions(stockfish_chess_engine PUBLIC DART_SHARED_LIB)
 
-if (ANDROID)
-  # Support Android 15 16k page size
+if (ANDROID OR HARMONYOS)
+  # Support Android 15 16k page size and HarmonyOS similar requirements
   target_link_options(stockfish_chess_engine PRIVATE "-Wl,-z,max-page-size=16384")
 endif()
 

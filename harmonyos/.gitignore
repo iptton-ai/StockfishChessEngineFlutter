@@ -1,0 +1,5 @@
+flutter/ephemeral/
+
+# HarmonyOS build artifacts
+/build/
+*.so
