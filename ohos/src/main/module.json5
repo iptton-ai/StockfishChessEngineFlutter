@@ -1,0 +1,10 @@
+{
+  "module": {
+    "name": "stockfish_chess_engine",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+    ]
+  }
+}

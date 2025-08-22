@@ -13,7 +13,7 @@ import 'package:stockfish_chess_engine/stockfish_chess_engine.dart';
 import 'package:stockfish_chess_engine/stockfish_chess_engine_state.dart';
 
 void main() {
-  if (Platform.isAndroid || Platform.isIOS) {
+  if (Platform.isAndroid || Platform.isIOS || Platform.isOhos) {
     runApp(MaterialApp(
       home: MobileApp(),
     ));

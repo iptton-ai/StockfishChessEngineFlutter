@@ -1,0 +1,8 @@
+{
+  "name": "stockfish_chess_engine",
+  "version": "1.0.0",
+  "description": "Stockfish Chess Engine Flutter Plugin for HarmonyOS",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}
